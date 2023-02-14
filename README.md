@@ -2,6 +2,10 @@
 
 
 A simple blog website where you can posts your blogs and coments on other blogs.
+## Project view
+![image](https://user-images.githubusercontent.com/98095808/218661783-894ae35c-ee6e-46cd-9014-53f7f21d453b.png)
+![image](https://user-images.githubusercontent.com/98095808/218661948-08169f51-85dd-4e0f-bc14-3ad39d3c60c6.png)
+
 
 ## Getting Started
  * Just clone the repo on your system.
