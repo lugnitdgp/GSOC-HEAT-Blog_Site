@@ -208,7 +208,13 @@ def myblogs(request):
     posts = user.post_set.filter(username=user)
     return render(request,'myblogs.html',{'posts':posts})
 
-
+def search(request):
+    if request.method=='POST':
+        title_1=request.POST["title_1"]
+        post=Post.objects.filter(title=title_1)
+        return render(request,'search.html',{
+            'posts':post
+        })
 # class AddCommentView(CreateView):
 #     model = Comment
 #     form_class = CommentForm
