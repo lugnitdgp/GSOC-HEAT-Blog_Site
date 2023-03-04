@@ -23,6 +23,17 @@
             
             <!-- <li><a href="/contact"><i class="fa-solid fa-message-quote"></i>Contact</a></li> -->
             <!-- <li><a href="/about">About</a></li> -->
+            {% if user.is_authenticated %}
+                <form action="{% url 'search' %}" method="post">
+                    {% csrf_token %}
+                    <div class="input-group">
+                        <div class="form-outline">
+                            <input type="search" id="form1" name="title_1" class="form-control" placeholder="search blogs by title">
+                            <button type="submit" class="btn btn-primary">search</button>
+                        </div>
+                    </div>
+                </form>
+            {% endif %}
             {% if user.is_authenticated %}<li><a href="{%url 'home'%}">Home</a></li>{% endif %}
             {% if user.is_authenticated %}<li><a href="/myblogs">My blogs</a></li>{% endif %}
             <li><a href="#">Category</a>
