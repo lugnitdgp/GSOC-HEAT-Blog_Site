@@ -26,6 +26,7 @@ urlpatterns = [
     path('article/delete/<int:pk>',views.DeletePostView.as_view(),name='delete_post'),
     path('myblogs',views.myblogs, name='myblogs'),
     path('like/<int:pk>',LikeView , name='like_post'),
+    path('search/',views.search,name='search')
     # path('article/<int:pk>/comment/', AddCommentView.as_view(), name='addcomment'),
     # path('delete/<post_id>',views.delete_post,name='delete'),
 ]
